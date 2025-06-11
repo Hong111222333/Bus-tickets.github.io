@@ -1,0 +1,386 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #eee;
+      min-height: 100vh;
+    }
+
+    .Menu {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .lish_Menu {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .lish {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .lish ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .lish ul li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      transition: color 0.1s;
+    }
+
+    .lish ul li a:hover {
+      color: #e2730a;
+    }
+    .login button A{
+        text-decoration: none;
+        color: white;
+    }
+    .login button {
+      background-color: #e2730a;
+      border: none;
+      border-radius: 7px;
+      padding: 10px 20px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login button:hover {
+      background-color: #c86405;
+    }
+   .hero {
+    height: 90px;
+  background: url("https://www.avatancharterbus.com/uploads/images/Banner-03-1.jpg") ;
+  padding: 250px 20px;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: rgb(201, 198, 198);
+  box-shadow: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.search-bar input,
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+}
+#date{
+    width: 280px;
+}
+#from-select{
+    width: 280px;
+    /* border: 1px solid #cf1313; */
+    border: none;
+}
+.search-bar button {
+  background-color: #e64a19;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+} 
+.class_card{
+  width:80%;
+  /* background-color: #000; */
+  margin: auto;
+  margin-top: 20px;
+}
+.flash-sale {
+  /* background-color: white; */
+}
+
+.flash-sale h2 {
+  margin-bottom: 20px;
+  
+}
+.txt{
+  display: flex;
+  margin: auto;
+  width: 77%;
+  height: 40Px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.more{
+  font-size: 22px;
+  align-items: ccenter;
+  color: black;
+  font: bold;
+  margin-top: 3px;
+  /* font-family: "Oswald", sans-serif; */
+}
+.cards {
+  
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: center; */
+  justify-content: space-around;  
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: rotateY('-5px');
+}
+.price {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+}
+
+.original {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 5px;
+}
+
+.card button {
+  background-color: #e64a19;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.see_more {
+  display: none;
+  margin: auto;
+  justify-content: space-around;
+  width: 80%;
+  /* background-color: yellow; */
+}
+.why-choose-us {
+  width: 80%;
+  margin: auto;
+  padding: 70px 20px;
+  /* background-color: #fff; */
+}
+
+.why-choose-us h1 {
+  text-align: center;
+  color: #d9534f;
+  margin-bottom: 10px;
+}
+
+.why-choose-us p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: #fff7f3;
+  border: 1px solid #f0d4ce;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+.feature h3 {
+  color: #d9534f;
+  margin-bottom: 10px;
+}
+.footer {
+    font-size: 20px;
+    width: 77%;
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  border-top: 1px solid #ddd;
+  margin: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 400px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-left a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-right {
+  text-align: left;
+}
+
+.social-media p,
+.payments p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.social-media a {
+  color: #1a1a1a;
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.pay-icon {
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+}   
+    @media (max-width: 768px) {
+      .lish_Menu {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .lish {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .lish ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+      }
+
+      .lish.active {
+        display: flex;
+      }
+
+      .login {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .login.active {
+        display: flex;
+      }
+      .hero{
+        padding: 80px 20px;
+        height: 350px;
+      }
+      .search-bar{
+        height: 250px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      .search-bar select,
+      .search-bar input,
+      .search-bar button {
+        width: 100%;
+        height: 40px;
+      }
+      /* .class_card {
+        width: 100%;
+      }
+      .see_more{
+        width: 100%;
+      } */
+       .footer {
+        background: none;
+        width: 90%;
+      }
+    }
